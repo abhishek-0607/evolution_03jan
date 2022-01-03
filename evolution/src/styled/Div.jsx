@@ -1,14 +1,22 @@
 import styled from "styled-components";
 export const Div = styled.div`
-  display: flex;
   width: 200px;
-  & > form {
+  display: flex;
+  & > div > form {
     margin: 5%;
     width: 90%;
   }
 
-  & > form > input {
+  & > div > form > input {
     padding: 5px;
     margin-bottom: 10px;
+  }
+  & > div > div {
+    display: flex;
+    width: 600px;
+    margin-bottom: 10px;
+  }
+  & > div > div > p {
+    margin-right: 10px;
   }
 `;

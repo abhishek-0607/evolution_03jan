@@ -10,14 +10,12 @@ export const Form = () => {
 
   const getData = () => {
     fetch("http://localhost:3001/receipes")
-      .then((d) => {
-        d.json();
-      })
+      .then((d) => d.json())
       .then((res) => {
         setData(res);
+        console.log(res);
       });
   };
-  console.log(data);
 
   const handleChange = (e) => {
     //console.log(ref.current.files);
@@ -42,34 +40,40 @@ export const Form = () => {
   };
   return (
     <Div>
-      <form onSubmit={addData}>
-        <h2>Add Receipe</h2>
-        <input
-          onChange={handleChange}
-          name="title"
-          type="text"
-          placeholder="enter receipe"
-        />
-        <input
-          onChange={handleChange}
-          name="ingredients"
-          type="text"
-          placeholder="enter ingredients"
-        />
-        <input
-          onChange={handleChange}
-          name="timing"
-          type="text"
-          placeholder="time to cook"
-        />
-        <input onChange={handleChange} ref={ref} name="image" type="file" />
-        <input type="submit" value="Submit" />
-      </form>
-
-      {/* {data.map((e) => (
-        <div>{e.title}</div>
-      ))} */}
-      <div>{data}</div>
+      <div>
+        <form onSubmit={addData}>
+          <h2>Add Receipe</h2>
+          <input
+            onChange={handleChange}
+            name="title"
+            type="text"
+            placeholder="enter receipe"
+          />
+          <input
+            onChange={handleChange}
+            name="ingredients"
+            type="text"
+            placeholder="enter ingredients"
+          />
+          <input
+            onChange={handleChange}
+            name="timing"
+            type="text"
+            placeholder="time to cook"
+          />
+          <input onChange={handleChange} ref={ref} name="image" type="file" />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div>
+        {data.map((e) => (
+          <div>
+            <p>title:-{e.title}</p>
+            <p>ingredients:-{e.ingredients}</p>
+            <p>timing:-{e.timing}</p>
+          </div>
+        ))}
+      </div>
     </Div>
   );
 };
