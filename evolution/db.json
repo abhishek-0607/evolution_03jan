@@ -20,6 +20,41 @@
       "timing": "30mins",
       "image": "C:\\fakepath\\aloo_paratha.jfif",
       "id": 3
+    },
+    {
+      "title": "sev tomato",
+      "ingredients": "sev namkeen , tomato",
+      "timing": "10mins",
+      "image": "C:\\fakepath\\aloo_paratha.jfif",
+      "id": 4
+    },
+    {
+      "title": "sev tomato",
+      "ingredients": "sev namkeen , tomato",
+      "timing": "10mins",
+      "image": "C:\\fakepath\\aloo_paratha.jfif",
+      "id": 5
+    },
+    {
+      "title": "kajoo kari",
+      "ingredients": "kajoo",
+      "timing": "30mins",
+      "image": "C:\\fakepath\\aloo_paratha.jfif",
+      "id": 6
+    },
+    {
+      "title": "kajoo kari",
+      "ingredients": "kajoo",
+      "timing": "30mins",
+      "image": "C:\\fakepath\\aloo_paratha.jfif",
+      "id": 7
+    },
+    {
+      "title": "aaaa",
+      "ingredients": "aaaaa",
+      "timing": "aaaaa",
+      "image": "C:\\fakepath\\aloo_paratha.jfif",
+      "id": 8
     }
   ]
 }

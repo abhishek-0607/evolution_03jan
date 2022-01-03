@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { styled } from "styled-components";
+import { Div } from "../styled/Div";
 export const Form = () => {
   const [form, setForm] = useState(null);
   const [data, setData] = useState([]);
@@ -17,9 +17,10 @@ export const Form = () => {
         setData(res);
       });
   };
+  console.log(data);
 
   const handleChange = (e) => {
-    console.log(ref.current.files);
+    //console.log(ref.current.files);
     const { name, value } = e.target;
     setForm({
       ...form,
@@ -37,12 +38,12 @@ export const Form = () => {
       },
     }).then(() => {
       getData();
-      setForm(null);
     });
   };
   return (
-    <div>
+    <Div>
       <form onSubmit={addData}>
+        <h2>Add Receipe</h2>
         <input
           onChange={handleChange}
           name="title"
@@ -69,6 +70,6 @@ export const Form = () => {
         <div>{e.title}</div>
       ))} */}
       <div>{data}</div>
-    </div>
+    </Div>
   );
 };
