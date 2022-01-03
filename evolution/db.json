@@ -1,0 +1,25 @@
+{
+  "receipes": [
+    {
+      "title": "aloo paratha",
+      "ingredients": "aloo, aata",
+      "timing": "30mins",
+      "image": "C:\\fakepath\\aloo_paratha.jfif",
+      "id": 1
+    },
+    {
+      "title": "paneer masala",
+      "ingredients": "paneer",
+      "timing": "30mins",
+      "image": "C:\\fakepath\\aloo_paratha.jfif",
+      "id": 2
+    },
+    {
+      "title": "paneer tikka",
+      "ingredients": "paneer ",
+      "timing": "30mins",
+      "image": "C:\\fakepath\\aloo_paratha.jfif",
+      "id": 3
+    }
+  ]
+}
