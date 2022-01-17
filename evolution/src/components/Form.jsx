@@ -18,7 +18,7 @@ export const Form = () => {
   };
 
   const handleChange = (e) => {
-    //console.log(ref.current.files);
+    console.log(ref.current.files);
     const { name, value } = e.target;
     setForm({
       ...form,
